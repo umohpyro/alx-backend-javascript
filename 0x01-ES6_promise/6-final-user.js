@@ -11,10 +11,10 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     //console.log(item.value);
     if (item.status === 'fulfilled') {
       response.push({ status: item.status, value: item.value });
-      console.log(response);
+      //console.log(response);
     } else {
       response.push({ status: item.status, value: `${item.reason}` });
-      console.log(response);
+     // console.log(response);
     }
   });
   return response;
