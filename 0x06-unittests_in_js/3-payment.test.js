@@ -7,7 +7,7 @@ const sinon = require('sinon');
 const Utils = require('./utils');
 const sendPaymentRequestToApi = require('./3-payment');
 
-describe('sendPaymentRequestToApi', function() {
+describe('sendPaymentRequestToAp', function() {
   beforeEach(function() {
     sinon.spy(Utils, 'calculateNumber');
   });

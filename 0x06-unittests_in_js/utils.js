@@ -1,3 +1,6 @@
+/**
+ * Defines utilities
+ */
 const Utils = {
   calculateNumber(type, a, b) {
     let result;
