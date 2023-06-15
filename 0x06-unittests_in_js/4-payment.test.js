@@ -8,13 +8,16 @@ const Utils = require('./utils');
 const sendPaymentRequestToApi = require('./4-payment');
 
 describe('sendPaymentRequestToApi', function () {
+
 	beforeEach(function () {
-		sinon.spy(console, 'log');
+		sinon.stub(console, 'log');
 		sinon.stub(Utils, 'calculateNumber').returns(10);
-	});
+  });
+  
 	afterEach(function () {
 		sinon.restore();
-	});
+  });
+  
 	it('validate the usage of the `Utils.calculateNumber` function', function () {
 		sendPaymentRequestToApi(100, 20);
 		// Check it is called
